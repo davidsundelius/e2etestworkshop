@@ -1,11 +1,11 @@
 describe('Shopping list', () => {
   before(() => {
-    cy.visit('http://localhost:8080/')
+    cy.visit('https://davidsundelius.github.io/e2etestworkshop/')
   })
 
   after(() => {
     cy.get('#logout').click();
-    cy.visit('http://localhost:8080/clearList.html')
+    cy.visit('https://davidsundelius.github.io/e2etestworkshop/clearList.html')
   })
 
   it('displays correct headers', () => {
